@@ -44,7 +44,7 @@ If you find Uni-PrevPredMap is useful in your research or applications, please c
 ```bibtex
 @article{peng2025uni,
   title={Uni-PrevPredMap: Extending PrevPredMap to a Unified Framework of Prior-Informed Modeling for Online Vectorized HD Map Construction},
-  author={Peng, Nan and Zhou, Xun and Wang, Mingming and Chen, Guisong and Chen, Songming},
+  author={Peng, Nan and Zhou, Xun and Wang, Mingming and Chen, Guisong and Xu, Wenqi},
   journal={arXiv preprint arXiv:2504.06647},
   year={2025}
 }
