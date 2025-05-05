@@ -22,11 +22,17 @@ This image displays prediction comparison of Uni-PrevPredMap in three modes: Uni
 
 #### nuScenes dataset
 
-plz stay tuned
+| Method  | Backbone | Epoch | Divider | Ped. Crossing | Boundary | mAP | Config | Download |
+|:----:|:----:|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| Uni-PrevPredMap | R50 | 24 | 72.4 | 75.8 | 73.7 | 74.0 | [config](projects/configs/uniprevpredmap/uniprevpredmap_nusc_r50_24ep.py) | [model & log](https://drive.google.com/drive/folders/1Wj1YNQY255_GAzEsnQkr5qUCjKS0fGOV?usp=sharing) |
+| Uni-PrevPredMap* | R50 | 24 | 83.9 | 77.7 | 79.9 | 80.5 | ↑ | ↑ |
 
 #### ArgoVerse2 dataset
 
-plz stay tuned
+| Method  | Backbone | Epoch | Divider | Ped. Crossing | Boundary | mAP | Config | Download |
+|:----:|:----:|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| Uni-PrevPredMap | R50 | 6 | 75.7 | 69.3 | 73.0 | 72.7 | [config](projects/configs/uniprevpredmap/uniprevpredmap_av2_3d_r50_6ep.py) | [model & log](https://drive.google.com/drive/folders/1h3Brmn8Cl9UiEWTD2nyUdbqYJi3KgFes?usp=sharing) |
+| Uni-PrevPredMap* | R50 | 6 | 83.1 | 74.5 | 80.3 | 79.3 | ↑ | ↑ |
 
 ## Getting Started
 These settings are mostly the same as [MapTRv2](https://github.com/hustvl/MapTR/tree/maptrv2)
