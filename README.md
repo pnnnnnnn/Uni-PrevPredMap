@@ -31,8 +31,11 @@ This image displays prediction comparison of Uni-PrevPredMap in three modes: Uni
 
 | Method  | Backbone | Epoch | Divider | Ped. Crossing | Boundary | mAP | Config | Download |
 |:----:|:----:|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| Uni-PrevPredMap | R50 | 6 | 75.7 | 69.3 | 73.0 | 72.7 | [config](projects/configs/uniprevpredmap/uniprevpredmap_av2_3d_r50_6ep.py) | [model & log](https://drive.google.com/drive/folders/1h3Brmn8Cl9UiEWTD2nyUdbqYJi3KgFes?usp=sharing) |
-| Uni-PrevPredMap* | R50 | 6 | 83.1 | 74.5 | 80.3 | 79.3 | ↑ | ↑ |
+| Uni-PrevPredMap | R50 | 6† | 75.7 | 69.3 | 73.0 | 72.7 | [config](projects/configs/uniprevpredmap/uniprevpredmap_av2_3d_r50_6ep.py) | [model & log](https://drive.google.com/drive/folders/1h3Brmn8Cl9UiEWTD2nyUdbqYJi3KgFes?usp=sharing) |
+| Uni-PrevPredMap* | R50 | 6† | 83.1 | 74.5 | 80.3 | 79.3 | ↑ | ↑ |
+
+† `total_epochs=24` with `partial=4` in the sampler (25% of the training set per epoch, re-sampled each epoch), equivalent to 6 full-data epochs in total
+iterations. Argoverse2 is sampled at 10Hz, so subsampled-epoch schedules are standard practice; we report the equivalent full-data epoch count for comparability.
 
 ## Getting Started
 These settings are mostly the same as [MapTRv2](https://github.com/hustvl/MapTR/tree/maptrv2)
