@@ -27,6 +27,10 @@ This image displays prediction comparison of Uni-PrevPredMap in three modes: Uni
 | Uni-PrevPredMap | R50 | 24 | 72.4 | 75.8 | 73.7 | 74.0 | [config](projects/configs/uniprevpredmap/uniprevpredmap_nusc_r50_24ep.py) | [model & log](https://drive.google.com/drive/folders/1Wj1YNQY255_GAzEsnQkr5qUCjKS0fGOV?usp=sharing) |
 | Uni-PrevPredMap* | R50 | 24 | 83.9 | 77.7 | 79.9 | 80.5 | ↑ | ↑ |
 
+> **Note:** Numbers in this table are from the released checkpoints. The paper
+> reports separate runs of the same configurations, so per-class results may
+> differ by a few tenths of a point due to run-to-run variance.
+
 #### ArgoVerse2 dataset
 
 | Method  | Backbone | Epoch | Divider | Ped. Crossing | Boundary | mAP | Config | Download |
