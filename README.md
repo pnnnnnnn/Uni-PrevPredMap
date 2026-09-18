@@ -22,8 +22,8 @@ This project introduces a unified prior-informed framework for online vectorized
 The framework has two core components: a tile-indexed 3D vectorized global representation that enables efficient refreshment, storage, and localized retrieval of 3D vectorized priors; and a tri-mode training paradigm that exposes the model to non-prior, temporal-prior, and temporal-map-fusion conditions, so that a single model perceives reliably without any prior, exploits priors when available, and stays robust when priors are imperfect.
 
 ## Visualization
-![qa](assets/qa_v3.png "qa")
-This image displays prediction comparison of Uni-PrevPredMap in three modes: Uni-PrevPredMap<sup>1</sup>, Uni-PrevPredMap<sup>2</sup>, and Uni-PrevPredMap<sup>3</sup> denote non-prior, temporal-prior and temporal-map-fusion-prior modes, respectively. Corresponding priors are illustrated to demonstrate their influence. Green, orange and blue lines represent road boundaries, lane dividers and pedestrian crossings, respectively.
+![qa](assets/qa_v4.png "qa")
+This figure compares predictions from Uni-PrevPredMap with and without cost-efficient HD map priors across occlusion, rainy, and night scenarios, with differences highlighted in purple shading. Corresponding priors are shown to illustrate their influence. Green, orange, and blue lines represent road boundaries, lane dividers, and pedestrian crossings, respectively.
 
 ## Models
 
