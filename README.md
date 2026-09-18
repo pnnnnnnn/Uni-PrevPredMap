@@ -1,18 +1,25 @@
+
 <div align="center">
   <h1>Uni-PrevPredMap</h1>
   
   <h3> Uni-PrevPredMap: Extending PrevPredMap to a Unified Framework of Prior-Informed Modeling for Online Vectorized HD Map Construction </h3>
   
-  [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2504.06647)
+  [![RA-L](https://img.shields.io/badge/IEEE-RA--L%202026-004a87.svg)](https://doi.org/10.1109/LRA.2026.3729481)
+  [![arXiv](https://img.shields.io/badge/arXiv-2504.06647-b31b1b.svg)](https://arxiv.org/abs/2504.06647)
   
 </div>
+
+## News
+- **[2026-09]** Accepted to IEEE Robotics and Automation Letters (RA-L).
 
 ## Introduction
 This repository is an official implementation of Uni-PrevPredMap.
 
 ## Overview
-![overview](assets/overview_v2.png "overview")
-This project introduces a unified prior-informed framework that systematically integrates two synergistic information sources: previous predictions and simulated outdated HD maps. The framework introduces two core innovations: a tile-indexed 3D vectorized global map processor enabling efficient refreshment, storage, and retrieval of 3D vectorized priors; a tri-mode operational optimization paradigm ensuring consistency across non-prior, temporal-prior, and temporal-map-fusion-prior scenarios while mitigating reliance on idealized map fidelity assumptions. 
+![overview](assets/overview_v5.png "overview")
+This project introduces a unified prior-informed framework for online vectorized HD map construction. It treats two complementary yet individually imperfect information sources — temporal predictions and cost-efficient HD map priors — within a single pipeline through their common vectorized representation.
+
+The framework has two core components: a tile-indexed 3D vectorized global representation that enables efficient refreshment, storage, and localized retrieval of 3D vectorized priors; and a tri-mode training paradigm that exposes the model to non-prior, temporal-prior, and temporal-map-fusion conditions, so that a single model perceives reliably without any prior, exploits priors when available, and stays robust when priors are imperfect.
 
 ## Visualization
 ![qa](assets/qa_v3.png "qa")
@@ -55,10 +62,14 @@ Uni-PrevPredMap is based on [MapTRv2](https://github.com/hustvl/MapTR/tree/maptr
 ## Citation
 If you find Uni-PrevPredMap is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry.
 ```bibtex
-@article{peng2025uni,
-  title={Uni-PrevPredMap: Extending PrevPredMap to a Unified Framework of Prior-Informed Modeling for Online Vectorized HD Map Construction},
+@ARTICLE{peng2026uniprevpredmap,
   author={Peng, Nan and Zhou, Xun and Wang, Mingming and Chen, Guisong and Xu, Wenqi},
-  journal={arXiv preprint arXiv:2504.06647},
-  year={2025}
+  journal={IEEE Robotics and Automation Letters},
+  title={Uni-PrevPredMap: Extending PrevPredMap to a Unified Framework of Prior-Informed Modeling for Online Vectorized HD Map Construction},
+  year={2026},
+  volume={11},
+  number={10},
+  pages={12032--12039},
+  doi={10.1109/LRA.2026.3729481}
 }
 ```
